@@ -1,68 +1,76 @@
-import React from "react";
-import { FistButton, SecondButton, ThirdButton, GhostButton, DisabledButton } from "./Button";
+import React from 'react';
+import { FistButton, SecondButton, ThirdButton, GhostButton, DisabledButton } from './Button';
 
-import "./index.css";
-import { Input } from "./Input";
+import './index.css';
+import { BaseSelectBox } from './SelectBox';
+
+/* SelectBox Mock Data */
+const Items = ['List Item1', 'List Item2', 'List Item3', 'List Item4'];
 
 function App() {
+  const handleOnChange = (value: string) => {
+    console.log('select box value:', value);
+  };
+
   return (
     <ul>
       {/* Fist-Button */}
       <li>
-        <FistButton size="large" text="large" onClick={() => console.log("click!")} />
+        <FistButton size='large' text='large' onClick={() => console.log('click!')} />
       </li>
       <li>
-        <FistButton size="small" text="small" />
+        <FistButton size='small' text='small' />
       </li>
       <li>
-        <FistButton size="fixed" text="fixed" />
+        <FistButton size='fixed' text='fixed' />
       </li>
 
       {/* Second-Button */}
       <li>
-        <SecondButton size="large" text="large" />
+        <SecondButton size='large' text='large' />
       </li>
       <li>
-        <SecondButton size="small" text="small" />
+        <SecondButton size='small' text='small' />
       </li>
       <li>
-        <SecondButton size="fixed" text="fixed" />
+        <SecondButton size='fixed' text='fixed' />
       </li>
 
       {/* Third-Button */}
       <li>
-        <ThirdButton size="large" text="large" />
+        <ThirdButton size='large' text='large' />
       </li>
       <li>
-        <ThirdButton size="small" text="small" />
+        <ThirdButton size='small' text='small' />
       </li>
       <li>
-        <ThirdButton size="fixed" text="fixed" />
+        <ThirdButton size='fixed' text='fixed' />
       </li>
 
       {/* Ghost-Button */}
       <li>
-        <GhostButton size="large" text="large" />
+        <GhostButton size='large' text='large' />
       </li>
       <li>
-        <GhostButton size="small" text="small" />
+        <GhostButton size='small' text='small' />
       </li>
       <li>
-        <GhostButton size="fixed" text="fixed" />
+        <GhostButton size='fixed' text='fixed' />
       </li>
 
       {/* Disabled-Button */}
       <li>
-        <DisabledButton size="large" text="large" />
+        <DisabledButton size='large' text='large' />
       </li>
       <li>
-        <DisabledButton size="small" text="small" />
+        <DisabledButton size='small' text='small' />
       </li>
       <li>
-        <DisabledButton size="fixed" text="fixed" />
+        <DisabledButton size='fixed' text='fixed' />
       </li>
 
-      <Input />
+      {/* <Input /> */}
+      <BaseSelectBox defaultValue='Default Item' items={Items} onChange={handleOnChange} />
     </ul>
   );
 }
