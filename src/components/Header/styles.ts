@@ -1,9 +1,9 @@
-import { css } from "@emotion/react";
+import { css } from '@emotion/react';
 
 export const box1 = css`
   width: 100%;
   height: 100px;
-  
+
   color: #fff;
   background: red;
   text-align: center;
