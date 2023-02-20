@@ -1,5 +1,5 @@
 const GRAY_SCALE = {
-  color_gray_1: '#FFFFFF', 
+  color_gray_1: '#FFFFFF',
   color_gray_2: '#FCFCFC',
   color_gray_3: '#F5F5F5',
   color_gray_4: '#EBEBEB',
@@ -11,8 +11,12 @@ const GRAY_SCALE = {
   color_gray_10: '#525252',
   color_gray_11: '#3D3D3D',
   color_gray_12: '#333333',
-  color_gray_13: '#292929', 
+  color_gray_13: '#292929',
   color_gray_14: '#1F1F1F',
 } as const;
 
-export {GRAY_SCALE};
+const BORDER = {
+  border_type_solid: 'solid',
+};
+
+export { GRAY_SCALE };

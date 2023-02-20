@@ -12,14 +12,3 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
-
-ul {
-  border: 3px orange dashed;
-  width: 800px;
-  margin: 300px auto;
-  padding: 0 10px;
-}
-
-ul > li {
-  margin: 20px auto;
-}
